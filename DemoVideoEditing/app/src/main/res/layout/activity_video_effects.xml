@@ -1,0 +1,467 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".video_effects.activities.VideoEffectsActivity">
+
+    <com.demo_video_editing.pulkit.video_effects.view.VideoSurfaceView
+        android:id="@+id/mVideoSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5">
+
+                <RelativeLayout
+                    android:id="@+id/rel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_saturation_effect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="@string/saturation_effect"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_saturation_effect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_toRightOf="@+id/tv_saturation_effect"
+                        android:max="10"
+                        android:padding="10dp"
+                        android:progress="0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel1">
+
+                    <TextView
+                        android:id="@+id/tv_auto_fix_effect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="@string/autofixeffect"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_autofixeffect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_toRightOf="@+id/tv_auto_fix_effect"
+                        android:max="10"
+                        android:padding="10dp"
+                        android:progress="0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel2">
+
+                    <TextView
+                        android:id="@+id/tv_BrightnessEffect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="@string/BrightnessEffect"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_BrightnessEffect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_toRightOf="@+id/tv_BrightnessEffect"
+                        android:max="10"
+                        android:padding="10dp"
+                        android:progress="0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel3">
+
+                    <TextView
+                        android:id="@+id/tv_ContrastEffect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="@string/ContrastEffect"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_ContrastEffect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_toRightOf="@+id/tv_ContrastEffect"
+                        android:max="10"
+                        android:padding="10dp"
+                        android:progress="0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel4">
+
+                    <TextView
+                        android:id="@+id/tv_FillLightEffect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="@string/FillLightEffect"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_FillLightEffect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_toRightOf="@+id/tv_FillLightEffect"
+                        android:max="10"
+                        android:padding="10dp"
+                        android:progress="0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel5">
+
+                    <TextView
+                        android:id="@+id/tv_GammaEffect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="@string/GammaEffect"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_GammaEffect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_toRightOf="@+id/tv_GammaEffect"
+                        android:max="10"
+                        android:padding="10dp"
+                        android:progress="0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel6">
+
+                    <TextView
+                        android:id="@+id/tv_GrainEffect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="@string/GrainEffect"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_GrainEffect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_toRightOf="@+id/tv_GrainEffect"
+                        android:max="10"
+                        android:padding="10dp"
+                        android:progress="0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel7">
+
+                    <TextView
+                        android:id="@+id/tv_HueEffect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="@string/HueEffect"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_HueEffect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_toRightOf="@+id/tv_HueEffect"
+                        android:max="10"
+                        android:padding="10dp"
+                        android:progress="0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel8">
+
+                    <TextView
+                        android:id="@+id/tv_SharpnessEffect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="@string/SharpnessEffect"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_SharpnessEffect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_toRightOf="@+id/tv_SharpnessEffect"
+                        android:max="10"
+                        android:padding="10dp"
+                        android:progress="0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel9">
+
+                    <TextView
+                        android:id="@+id/tv_TemperatureEffect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="@string/TemperatureEffect"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_TemperatureEffect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_toRightOf="@+id/tv_TemperatureEffect"
+                        android:max="10"
+                        android:padding="10dp"
+                        android:progress="0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel10">
+
+                    <TextView
+                        android:id="@+id/tv_VignetteEffect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="@string/VignetteEffect"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_VignetteEffect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_toRightOf="@+id/tv_VignetteEffect"
+                        android:max="10"
+                        android:padding="10dp"
+                        android:progress="0" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="#00000000"
+                    android:text="@string/reset"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_blackAndWhiteEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_reset"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text="@string/blackAndWhiteEffect"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_CrossProcessEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_blackAndWhiteEffect"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text="@string/CrossProcessEffect"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_DocumentaryEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_CrossProcessEffect"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text="@string/DocumentaryEffect"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_DuotoneEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_DocumentaryEffect"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text="@string/DuotoneEffect"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_GreyScaleEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_DuotoneEffect"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text="@string/GreyScaleEffect"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_InvertColorsEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_GreyScaleEffect"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text="@string/InvertColorsEffect"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_LamoishEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_InvertColorsEffect"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text="@string/LamoishEffect"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_PosterizeEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_LamoishEffect"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text="@string/PosterizeEffect"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_SepiaEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_PosterizeEffect"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text="@string/SepiaEffect"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_TintEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_SepiaEffect"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text="@string/TintEffect"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

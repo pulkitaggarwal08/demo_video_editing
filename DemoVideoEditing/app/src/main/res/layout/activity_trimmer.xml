@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.demo_video_editing.pulkit.video_editing.video_trimmer.VideoTrimmer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timeLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />

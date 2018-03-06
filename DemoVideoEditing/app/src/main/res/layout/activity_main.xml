@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo_video_editing.pulkit.MainActivity">
+
+    <Button
+        android:id="@+id/btn_video_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Video Editing"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_video_effects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_video_edit"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Video Effects"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>
